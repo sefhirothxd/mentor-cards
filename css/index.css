@@ -1,0 +1,148 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Very-Light-Gray);
+  flex-direction: column;
+}
+
+.container-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.container-text>h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.container-text>h2 {
+  font-size: 4rem;
+  color: var(--Very-Dark-Blue);
+  font-weight: 200;
+}
+
+.container-text>p {
+  font-size: 1.8rem;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 8rem;
+  padding: 0 20px;
+}
+
+
+
+.container__card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 3rem;
+  width: 100%;
+  max-width: 350px;
+  gap: 2rem;
+  background-color: var(--Very-Light-Gray);
+  border-top: 4px solid var(--Very-Dark-Blue);
+  box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.57);
+}
+
+.container__cards--group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.green {
+  border-color: var(--Cyan);
+}
+
+.red {
+  border-color: var(--Red);
+}
+
+.yellow {
+  border-color: var(--Orange);
+}
+
+.blue {
+  border-color: var(--Blue);
+}
+
+.container__card p {
+  color: var(--Grayish-Blue);
+}
+
+.container__card-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 1130px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-text>h1 {
+    font-size: 2.5rem;
+
+  }
+
+  .container-text>h2 {
+    font-size: 2.5rem;
+  }
+
+  .container-text>p {
+    font-size: 1.3rem;
+  }
+}
