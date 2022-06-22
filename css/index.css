@@ -82,6 +82,7 @@ body {
   width: 100%;
   max-width: 350px;
   gap: 2rem;
+  border-radius: 1rem;
   background-color: var(--Very-Light-Gray);
   border-top: 4px solid var(--Very-Dark-Blue);
   box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.57);
